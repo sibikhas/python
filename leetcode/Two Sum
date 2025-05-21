@@ -1,0 +1,11 @@
+class Solution(object):
+    def twoSum(self, nums, target):
+        L1={}
+        for i,e in enumerate(nums):
+            diff=target-e
+            if diff in L1:
+               return [L1[diff],i]
+            L1[e]=i
+        return        
+                     
+        
