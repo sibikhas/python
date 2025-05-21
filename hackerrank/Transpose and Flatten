@@ -1,0 +1,9 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+import numpy
+
+n, m = map(int, input().split())
+
+M = numpy.array([input().split() for i in range(n)], numpy.int)
+
+print(M.transpose())
+print(M.flatten())
